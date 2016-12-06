@@ -1,0 +1,23 @@
+Server side rendering with react
+1. npm install express
+2. create server.js
+3. Install react and react-dom
+4. Create Component.jsx
+5. Check in the chrome debugger, the elements have react data attributes
+6. install babel
+7. ReactDOMServer only renders the HTML markup that is why, the button click does not work
+To make the app universal, need to create a JS bundle to load on the client side.
+Then our component will re-mount the DOM and the JS features will be available in the browser.
+
+Client side rendering with react
+With server side rendering of React, the interactive features won't work - as the component was not mounted on the client side.
+To send a bundled JS to client side, need to configure the web server to serve static files.
+Can use express.static middleware to serve all files in the public directory
+Use webpack to bundle client side js
+Install babel-core and babel loader to transpile JSX to ES5
+ReactDOMServer is used for server side rendering, whereas ReactDOM is used for client side rendering
+
+Server side routing with react
+Install react-router
+Create directory routes and index.jsx inside it. Routes will live here.
+
